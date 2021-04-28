@@ -1,0 +1,5 @@
+#!/usr/bin/python2.7
+"""Blank Python 2.7 file"""
+import re
+s=input()
+print(bool(re.match(r'^[0-9][\d]{5}$',s) and len(re.findall(r'(\d)(?=\d\1)', s))<2))
